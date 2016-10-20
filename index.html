@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>icydew</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- _header start-->
+<nav class="navbar navbar-default navbar-fixed-top main-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-left collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">Katrin Yukhno</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">work <span class="sr-only">(current)</span></a></li>
+        <li><a href="./about.html">about / contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- _header end-->
+
+<!-- _main-masthead start-->
+<div class="main-masthead">
+  <div class="content">
+    <p class="name">Katrin Yukhno</p>
+    <p class="about">I’m a Web developer from Kharkiv, Ukraine.<br>Scroll down to see my work!</p>
+    <div class="arrowcontainer">
+      <div class="arrow"></div>
+    </div>
+  </div>
+</div>
+<!-- _main-masthead end-->
+
+<!-- _my-works start-->
+<div class="my-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 section" >
+        <a class="home-site" href="https://icydew.github.io/portfolio-luna/" target="_blank">
+          <img class="img" src="images/luna.png" alt="" title="">
+          <div class="info">
+            <h4 class="name">Landing Page</h4>
+            <h6 class="technology">CSS Flex, responsive, Sass</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 section">
+        <a class="home-site" href="https://icydew.github.io/portfolio-dashboard/" target="_blank">
+          <img class=" img" src="images/dashboard.png" alt="" title="">
+          <div class="info">
+            <h4 class="name">Dashboard</h4>
+            <h6 class="technology">CSS Flex, responsive, Sass</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 section">
+        <img class="img" src="images/form.png" alt="" title="">
+        <div class="info">
+          <h4 class="name">Form</h4>
+          <h6 class="technology">CSS Float, Less</h6>
+        </div>
+      </div>
+      <div class="col-md-6 section">
+        <img class="img" src="images/suitstheme.png" alt="" title="">
+        <div class="info">
+          <h4 class="name">Blog</h4>
+          <h6 class="technology">CSS Float, Less</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- _my-works end-->
+
+<!-- _main-footer start-->
+<footer class="main-footer">Powered by Katrin Yukhno</footer>
+<!-- _main-footer end-->
+
+<script>
+  $(function() {
+    $(window).on('scroll', function() {
+      var top = $('body').scrollTop() || $('html').scrollTop();
+      var opacity = 1 - top / 450;
+      $('.main-masthead p').css('opacity', opacity > 0 ? opacity : 0);
+    })
+  });
+</script>
+
+</body>
+</html>
